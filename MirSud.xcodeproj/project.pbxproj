@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		161FD336262EB647003FF17E /* SPB_DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FD335262EB647003FF17E /* SPB_DetailService.swift */; };
+		161FD33A262F1755003FF17E /* RealmVkUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FD339262F1755003FF17E /* RealmVkUser.swift */; };
+		161FD33D262F17B5003FF17E /* RealmCivilCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FD33C262F17B5003FF17E /* RealmCivilCase.swift */; };
+		161FD35C262F4174003FF17E /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FD35B262F4174003FF17E /* AsyncImage.swift */; };
+		161FD35F262F4191003FF17E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FD35E262F4191003FF17E /* ImageLoader.swift */; };
+		161FD362262F41AA003FF17E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FD361262F41AA003FF17E /* ImageCache.swift */; };
+		161FD365262F41D3003FF17E /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FD364262F41D3003FF17E /* EnvironmentValues+ImageCache.swift */; };
+		161FD36A262F4701003FF17E /* CommonWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161FD369262F4701003FF17E /* CommonWebView.swift */; };
+		165D930626301CE40070698F /* RealmNonVKUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D930526301CE40070698F /* RealmNonVKUser.swift */; };
+		165D930B26301D640070698F /* NonVkUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D930A26301D640070698F /* NonVkUser.swift */; };
+		165D930F263064920070698F /* DefendantCivilCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D930E263064920070698F /* DefendantCivilCase.swift */; };
+		166FB64F2631DE0500B8467A /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166FB64E2631DE0500B8467A /* MailView.swift */; };
+		1681F2082628708C008650EB /* MirSudApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F2072628708C008650EB /* MirSudApp.swift */; };
+		1681F20A2628708C008650EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F2092628708C008650EB /* ContentView.swift */; };
+		1681F20C2628708C008650EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1681F20B2628708C008650EB /* Assets.xcassets */; };
+		1681F20F2628708C008650EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1681F20E2628708C008650EB /* Preview Assets.xcassets */; };
+		1681F22426287485008650EB /* CivilCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F22326287485008650EB /* CivilCase.swift */; };
+		1681F2282628753B008650EB /* CivilCaseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F2272628753B008650EB /* CivilCaseDetail.swift */; };
+		1681F23026287716008650EB /* spb.json in Resources */ = {isa = PBXBuildFile; fileRef = 1681F22F26287716008650EB /* spb.json */; };
+		1681F23326288D4E008650EB /* Test_CivilCaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F23226288D4E008650EB /* Test_CivilCaseList.swift */; };
+		1681F23726288DBB008650EB /* CivilCaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F23626288DBB008650EB /* CivilCaseList.swift */; };
+		1681F23A26288E01008650EB /* CivilCaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F23926288E01008650EB /* CivilCaseRow.swift */; };
+		1681F23D26288EBA008650EB /* CivilCaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F23C26288EBA008650EB /* CivilCaseDetailView.swift */; };
+		1681F2492628936F008650EB /* Parser_CivilCaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F2482628936F008650EB /* Parser_CivilCaseList.swift */; };
+		1681F24E26289754008650EB /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F24D26289754008650EB /* String+Extensions.swift */; };
+		1681F2522628A6AD008650EB /* GroupBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F2512628A6AD008650EB /* GroupBy.swift */; };
+		1681F2552628BF36008650EB /* spd-detail_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 1681F2542628BF36008650EB /* spd-detail_1.json */; };
+		1681F2582628C14C008650EB /* Parser_CivilCaseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F2572628C14C008650EB /* Parser_CivilCaseDetail.swift */; };
+		1681F25C2628C1EB008650EB /* Test_CivilCaseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681F25B2628C1EB008650EB /* Test_CivilCaseDetail.swift */; };
+		16941D042629638900C1C39A /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D032629638900C1C39A /* Date+Extensions.swift */; };
+		16941D0A2629721200C1C39A /* CivilCaseList_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D092629721200C1C39A /* CivilCaseList_VM.swift */; };
+		16941D0F2629745800C1C39A /* SPB_NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D0E2629745800C1C39A /* SPB_NetworkService.swift */; };
+		16941D142629BB1400C1C39A /* SPB_AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D132629BB1400C1C39A /* SPB_AlamofireService.swift */; };
+		16941D1A2629ECB600C1C39A /* SPB_UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D192629ECB600C1C39A /* SPB_UserDefaultService.swift */; };
+		16941D1D2629F41300C1C39A /* Defendant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D1C2629F41300C1C39A /* Defendant.swift */; };
+		16941D4D262A058200C1C39A /* DefendantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D4C262A058200C1C39A /* DefendantList.swift */; };
+		16941D50262A05A600C1C39A /* DefendantList_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D4F262A05A600C1C39A /* DefendantList_VM.swift */; };
+		16941D56262A069B00C1C39A /* DefendantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941D55262A069B00C1C39A /* DefendantRow.swift */; };
+		16941E28262A984200C1C39A /* RealmBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E27262A984200C1C39A /* RealmBase.swift */; };
+		16941E2B262A984E00C1C39A /* RealmDefendant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E2A262A984E00C1C39A /* RealmDefendant.swift */; };
+		16941E31262A991E00C1C39A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E30262A991E00C1C39A /* RealmService.swift */; };
+		16941E36262AFCC000C1C39A /* DefendantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E35262AFCC000C1C39A /* DefendantDetail.swift */; };
+		16941E3C262B369500C1C39A /* DefendantHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E3B262B369500C1C39A /* DefendantHistory.swift */; };
+		16941E45262BFFC200C1C39A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E44262BFFC200C1C39A /* ActivityIndicator.swift */; };
+		16941E53262C452800C1C39A /* SPB_RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E52262C452800C1C39A /* SPB_RealmService.swift */; };
+		16941E5B262C462B00C1C39A /* VK_AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E5A262C462B00C1C39A /* VK_AlamofireService.swift */; };
+		16941E5F262C4A3B00C1C39A /* VK_Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E5E262C4A3B00C1C39A /* VK_Session.swift */; };
+		16941E66262C4B2C00C1C39A /* VK_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E65262C4B2C00C1C39A /* VK_User.swift */; };
+		16941E6C262C4C2F00C1C39A /* Parser_VK_UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E6B262C4C2F00C1C39A /* Parser_VK_UserList.swift */; };
+		16941E76262C500700C1C39A /* VK_Login_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E75262C500700C1C39A /* VK_Login_View.swift */; };
+		16941E7A262C504A00C1C39A /* VK_Login_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E79262C504A00C1C39A /* VK_Login_VM.swift */; };
+		16941E7E262C50D700C1C39A /* VK_RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E7D262C50D700C1C39A /* VK_RealmService.swift */; };
+		16941E85262C545A00C1C39A /* VK_LoginNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E84262C545A00C1C39A /* VK_LoginNetworkService.swift */; };
+		16941E89262C55C300C1C39A /* Parser_VK_Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941E88262C55C300C1C39A /* Parser_VK_Token.swift */; };
+		16941EA5262CB02500C1C39A /* RealmToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941EA4262CB02500C1C39A /* RealmToken.swift */; };
+		16941EAB262D490F00C1C39A /* VK_Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941EAA262D490F00C1C39A /* VK_Login.swift */; };
+		16941EB3262DA32100C1C39A /* SPB_VK_LinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941EB2262DA32100C1C39A /* SPB_VK_LinkService.swift */; };
+		16941EB9262DE54100C1C39A /* GrowingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16941EB8262DE54100C1C39A /* GrowingButton.swift */; };
+		D9FF7E6FFDF41454264660F4 /* Pods_MirSud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBC428D2E3E2891096B138D /* Pods_MirSud.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		161FD335262EB647003FF17E /* SPB_DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPB_DetailService.swift; sourceTree = "<group>"; };
+		161FD339262F1755003FF17E /* RealmVkUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmVkUser.swift; sourceTree = "<group>"; };
+		161FD33C262F17B5003FF17E /* RealmCivilCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCivilCase.swift; sourceTree = "<group>"; };
+		161FD35B262F4174003FF17E /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		161FD35E262F4191003FF17E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		161FD361262F41AA003FF17E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		161FD364262F41D3003FF17E /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
+		161FD369262F4701003FF17E /* CommonWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonWebView.swift; sourceTree = "<group>"; };
+		165D930526301CE40070698F /* RealmNonVKUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmNonVKUser.swift; sourceTree = "<group>"; };
+		165D930A26301D640070698F /* NonVkUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonVkUser.swift; sourceTree = "<group>"; };
+		165D930E263064920070698F /* DefendantCivilCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefendantCivilCase.swift; sourceTree = "<group>"; };
+		166FB64E2631DE0500B8467A /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		1681F2042628708C008650EB /* MirSud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirSud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1681F2072628708C008650EB /* MirSudApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirSudApp.swift; sourceTree = "<group>"; };
+		1681F2092628708C008650EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1681F20B2628708C008650EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1681F20E2628708C008650EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1681F2102628708C008650EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1681F22326287485008650EB /* CivilCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilCase.swift; sourceTree = "<group>"; };
+		1681F2272628753B008650EB /* CivilCaseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilCaseDetail.swift; sourceTree = "<group>"; };
+		1681F22F26287716008650EB /* spb.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spb.json; sourceTree = "<group>"; };
+		1681F23226288D4E008650EB /* Test_CivilCaseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_CivilCaseList.swift; sourceTree = "<group>"; };
+		1681F23626288DBB008650EB /* CivilCaseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilCaseList.swift; sourceTree = "<group>"; };
+		1681F23926288E01008650EB /* CivilCaseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilCaseRow.swift; sourceTree = "<group>"; };
+		1681F23C26288EBA008650EB /* CivilCaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilCaseDetailView.swift; sourceTree = "<group>"; };
+		1681F2482628936F008650EB /* Parser_CivilCaseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser_CivilCaseList.swift; sourceTree = "<group>"; };
+		1681F24D26289754008650EB /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		1681F2512628A6AD008650EB /* GroupBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBy.swift; sourceTree = "<group>"; };
+		1681F2542628BF36008650EB /* spd-detail_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "spd-detail_1.json"; sourceTree = "<group>"; };
+		1681F2572628C14C008650EB /* Parser_CivilCaseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser_CivilCaseDetail.swift; sourceTree = "<group>"; };
+		1681F25B2628C1EB008650EB /* Test_CivilCaseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CivilCaseDetail.swift; sourceTree = "<group>"; };
+		16941D032629638900C1C39A /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		16941D092629721200C1C39A /* CivilCaseList_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilCaseList_VM.swift; sourceTree = "<group>"; };
+		16941D0E2629745800C1C39A /* SPB_NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPB_NetworkService.swift; sourceTree = "<group>"; };
+		16941D132629BB1400C1C39A /* SPB_AlamofireService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPB_AlamofireService.swift; sourceTree = "<group>"; };
+		16941D192629ECB600C1C39A /* SPB_UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPB_UserDefaultService.swift; sourceTree = "<group>"; };
+		16941D1C2629F41300C1C39A /* Defendant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defendant.swift; sourceTree = "<group>"; };
+		16941D4C262A058200C1C39A /* DefendantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefendantList.swift; sourceTree = "<group>"; };
+		16941D4F262A05A600C1C39A /* DefendantList_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefendantList_VM.swift; sourceTree = "<group>"; };
+		16941D55262A069B00C1C39A /* DefendantRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefendantRow.swift; sourceTree = "<group>"; };
+		16941E27262A984200C1C39A /* RealmBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmBase.swift; sourceTree = "<group>"; };
+		16941E2A262A984E00C1C39A /* RealmDefendant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDefendant.swift; sourceTree = "<group>"; };
+		16941E30262A991E00C1C39A /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		16941E35262AFCC000C1C39A /* DefendantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefendantDetail.swift; sourceTree = "<group>"; };
+		16941E3B262B369500C1C39A /* DefendantHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefendantHistory.swift; sourceTree = "<group>"; };
+		16941E44262BFFC200C1C39A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		16941E52262C452800C1C39A /* SPB_RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPB_RealmService.swift; sourceTree = "<group>"; };
+		16941E5A262C462B00C1C39A /* VK_AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_AlamofireService.swift; sourceTree = "<group>"; };
+		16941E5E262C4A3B00C1C39A /* VK_Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_Session.swift; sourceTree = "<group>"; };
+		16941E65262C4B2C00C1C39A /* VK_User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_User.swift; sourceTree = "<group>"; };
+		16941E6B262C4C2F00C1C39A /* Parser_VK_UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser_VK_UserList.swift; sourceTree = "<group>"; };
+		16941E75262C500700C1C39A /* VK_Login_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_Login_View.swift; sourceTree = "<group>"; };
+		16941E79262C504A00C1C39A /* VK_Login_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_Login_VM.swift; sourceTree = "<group>"; };
+		16941E7D262C50D700C1C39A /* VK_RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_RealmService.swift; sourceTree = "<group>"; };
+		16941E84262C545A00C1C39A /* VK_LoginNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_LoginNetworkService.swift; sourceTree = "<group>"; };
+		16941E88262C55C300C1C39A /* Parser_VK_Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser_VK_Token.swift; sourceTree = "<group>"; };
+		16941EA4262CB02500C1C39A /* RealmToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmToken.swift; sourceTree = "<group>"; };
+		16941EAA262D490F00C1C39A /* VK_Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_Login.swift; sourceTree = "<group>"; };
+		16941EB2262DA32100C1C39A /* SPB_VK_LinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPB_VK_LinkService.swift; sourceTree = "<group>"; };
+		16941EB8262DE54100C1C39A /* GrowingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingButton.swift; sourceTree = "<group>"; };
+		3427E0107CF455B0CA175CE3 /* Pods-MirSud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirSud.release.xcconfig"; path = "Target Support Files/Pods-MirSud/Pods-MirSud.release.xcconfig"; sourceTree = "<group>"; };
+		4EBC428D2E3E2891096B138D /* Pods_MirSud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirSud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7B6B8E8252BF65CA4B6FC3 /* Pods-MirSud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirSud.debug.xcconfig"; path = "Target Support Files/Pods-MirSud/Pods-MirSud.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1681F2012628708C008650EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FF7E6FFDF41454264660F4 /* Pods_MirSud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		161FD359262F4150003FF17E /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				161FD35B262F4174003FF17E /* AsyncImage.swift */,
+				161FD35E262F4191003FF17E /* ImageLoader.swift */,
+				161FD361262F41AA003FF17E /* ImageCache.swift */,
+				161FD364262F41D3003FF17E /* EnvironmentValues+ImageCache.swift */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		161FD368262F46F2003FF17E /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				161FD369262F4701003FF17E /* CommonWebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		165D930926301D530070698F /* Non-VK Users */ = {
+			isa = PBXGroup;
+			children = (
+				165D930A26301D640070698F /* NonVkUser.swift */,
+			);
+			path = "Non-VK Users";
+			sourceTree = "<group>";
+		};
+		166FB64D2631DDF000B8467A /* MailView */ = {
+			isa = PBXGroup;
+			children = (
+				166FB64E2631DE0500B8467A /* MailView.swift */,
+			);
+			path = MailView;
+			sourceTree = "<group>";
+		};
+		1681F1FB2628708C008650EB = {
+			isa = PBXGroup;
+			children = (
+				1681F2062628708C008650EB /* MirSud */,
+				1681F2052628708C008650EB /* Products */,
+				21E00493A003E1C554F534C9 /* Pods */,
+				78EFD52780485C6B4466E1A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1681F2052628708C008650EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1681F2042628708C008650EB /* MirSud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1681F2062628708C008650EB /* MirSud */ = {
+			isa = PBXGroup;
+			children = (
+				16941E4D262C222900C1C39A /* VK */,
+				16941E2E262A991200C1C39A /* Common */,
+				1681F24C26289742008650EB /* Helper */,
+				1681F2412628900B008650EB /* Resources */,
+				1681F2212628743B008650EB /* SPB */,
+				1681F2072628708C008650EB /* MirSudApp.swift */,
+				1681F2092628708C008650EB /* ContentView.swift */,
+				1681F20B2628708C008650EB /* Assets.xcassets */,
+				1681F2102628708C008650EB /* Info.plist */,
+				1681F20D2628708C008650EB /* Preview Content */,
+			);
+			path = MirSud;
+			sourceTree = "<group>";
+		};
+		1681F20D2628708C008650EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1681F20E2628708C008650EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1681F217262870B7008650EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16941E26262A982C00C1C39A /* Non-Persistent */,
+				16941E25262A982500C1C39A /* Persistent */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1681F2212628743B008650EB /* SPB */ = {
+			isa = PBXGroup;
+			children = (
+				1681F24626289350008650EB /* Service */,
+				1681F217262870B7008650EB /* Model */,
+				16941D08262971E700C1C39A /* VM */,
+				1681F23526288DA4008650EB /* View */,
+				1681F22A2628757E008650EB /* Test */,
+			);
+			path = SPB;
+			sourceTree = "<group>";
+		};
+		1681F22A2628757E008650EB /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				1681F23226288D4E008650EB /* Test_CivilCaseList.swift */,
+				1681F25B2628C1EB008650EB /* Test_CivilCaseDetail.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		1681F23526288DA4008650EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16941D54262A068500C1C39A /* Defendant */,
+				16941D53262A067900C1C39A /* Civil Case */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1681F2412628900B008650EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1681F22F26287716008650EB /* spb.json */,
+				1681F2542628BF36008650EB /* spd-detail_1.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1681F24626289350008650EB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				16941D182629EC9D00C1C39A /* Persistent */,
+				16941D0D262973C000C1C39A /* Network */,
+				1681F24726289359008650EB /* Parser */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1681F24726289359008650EB /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				1681F2482628936F008650EB /* Parser_CivilCaseList.swift */,
+				1681F2572628C14C008650EB /* Parser_CivilCaseDetail.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		1681F24C26289742008650EB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				16941D032629638900C1C39A /* Date+Extensions.swift */,
+				1681F24D26289754008650EB /* String+Extensions.swift */,
+				1681F2512628A6AD008650EB /* GroupBy.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		16941D08262971E700C1C39A /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				16941D092629721200C1C39A /* CivilCaseList_VM.swift */,
+				16941D4F262A05A600C1C39A /* DefendantList_VM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		16941D0D262973C000C1C39A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				161FD335262EB647003FF17E /* SPB_DetailService.swift */,
+				16941EB2262DA32100C1C39A /* SPB_VK_LinkService.swift */,
+				16941D0E2629745800C1C39A /* SPB_NetworkService.swift */,
+				16941D132629BB1400C1C39A /* SPB_AlamofireService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		16941D182629EC9D00C1C39A /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				16941D192629ECB600C1C39A /* SPB_UserDefaultService.swift */,
+				16941E52262C452800C1C39A /* SPB_RealmService.swift */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		16941D53262A067900C1C39A /* Civil Case */ = {
+			isa = PBXGroup;
+			children = (
+				1681F23626288DBB008650EB /* CivilCaseList.swift */,
+				1681F23926288E01008650EB /* CivilCaseRow.swift */,
+				1681F23C26288EBA008650EB /* CivilCaseDetailView.swift */,
+			);
+			path = "Civil Case";
+			sourceTree = "<group>";
+		};
+		16941D54262A068500C1C39A /* Defendant */ = {
+			isa = PBXGroup;
+			children = (
+				16941D4C262A058200C1C39A /* DefendantList.swift */,
+				16941D55262A069B00C1C39A /* DefendantRow.swift */,
+				16941E35262AFCC000C1C39A /* DefendantDetail.swift */,
+				165D930E263064920070698F /* DefendantCivilCase.swift */,
+			);
+			path = Defendant;
+			sourceTree = "<group>";
+		};
+		16941E25262A982500C1C39A /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				16941E2A262A984E00C1C39A /* RealmDefendant.swift */,
+				161FD33C262F17B5003FF17E /* RealmCivilCase.swift */,
+				161FD339262F1755003FF17E /* RealmVkUser.swift */,
+				165D930526301CE40070698F /* RealmNonVKUser.swift */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		16941E26262A982C00C1C39A /* Non-Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				165D930926301D530070698F /* Non-VK Users */,
+				16941E3A262B368100C1C39A /* Defendant */,
+				16941E39262B367700C1C39A /* Civil Case */,
+			);
+			path = "Non-Persistent";
+			sourceTree = "<group>";
+		};
+		16941E2E262A991200C1C39A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				166FB64D2631DDF000B8467A /* MailView */,
+				161FD368262F46F2003FF17E /* WebView */,
+				161FD359262F4150003FF17E /* ImageLoader */,
+				16941E43262BFFAC00C1C39A /* UI */,
+				16941E2F262A991E00C1C39A /* Realm */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		16941E2F262A991E00C1C39A /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				16941E27262A984200C1C39A /* RealmBase.swift */,
+				16941E30262A991E00C1C39A /* RealmService.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		16941E39262B367700C1C39A /* Civil Case */ = {
+			isa = PBXGroup;
+			children = (
+				1681F22326287485008650EB /* CivilCase.swift */,
+				1681F2272628753B008650EB /* CivilCaseDetail.swift */,
+			);
+			path = "Civil Case";
+			sourceTree = "<group>";
+		};
+		16941E3A262B368100C1C39A /* Defendant */ = {
+			isa = PBXGroup;
+			children = (
+				16941D1C2629F41300C1C39A /* Defendant.swift */,
+				16941E3B262B369500C1C39A /* DefendantHistory.swift */,
+			);
+			path = Defendant;
+			sourceTree = "<group>";
+		};
+		16941E43262BFFAC00C1C39A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				16941E44262BFFC200C1C39A /* ActivityIndicator.swift */,
+				16941EB8262DE54100C1C39A /* GrowingButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		16941E4D262C222900C1C39A /* VK */ = {
+			isa = PBXGroup;
+			children = (
+				16941E74262C4FEF00C1C39A /* View */,
+				16941E4F262C44FB00C1C39A /* Service */,
+				16941E62262C4B0700C1C39A /* Model */,
+				16941E6F262C4CF500C1C39A /* VM */,
+			);
+			path = VK;
+			sourceTree = "<group>";
+		};
+		16941E4F262C44FB00C1C39A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				16941E7C262C50C200C1C39A /* Persistent */,
+				16941E55262C45C200C1C39A /* Network */,
+				16941E6A262C4C0A00C1C39A /* Parser */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		16941E55262C45C200C1C39A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				16941E5E262C4A3B00C1C39A /* VK_Session.swift */,
+				16941E84262C545A00C1C39A /* VK_LoginNetworkService.swift */,
+				16941E5A262C462B00C1C39A /* VK_AlamofireService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		16941E62262C4B0700C1C39A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16941EA3262CB01500C1C39A /* Persistent */,
+				16941E63262C4B1B00C1C39A /* Non-Persistent */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16941E63262C4B1B00C1C39A /* Non-Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				16941E65262C4B2C00C1C39A /* VK_User.swift */,
+				16941EAA262D490F00C1C39A /* VK_Login.swift */,
+			);
+			path = "Non-Persistent";
+			sourceTree = "<group>";
+		};
+		16941E6A262C4C0A00C1C39A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				16941E6B262C4C2F00C1C39A /* Parser_VK_UserList.swift */,
+				16941E88262C55C300C1C39A /* Parser_VK_Token.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		16941E6F262C4CF500C1C39A /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				16941E79262C504A00C1C39A /* VK_Login_VM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		16941E74262C4FEF00C1C39A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16941E75262C500700C1C39A /* VK_Login_View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16941E7C262C50C200C1C39A /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				16941E7D262C50D700C1C39A /* VK_RealmService.swift */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		16941EA3262CB01500C1C39A /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				16941EA4262CB02500C1C39A /* RealmToken.swift */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		21E00493A003E1C554F534C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC7B6B8E8252BF65CA4B6FC3 /* Pods-MirSud.debug.xcconfig */,
+				3427E0107CF455B0CA175CE3 /* Pods-MirSud.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78EFD52780485C6B4466E1A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EBC428D2E3E2891096B138D /* Pods_MirSud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1681F2032628708C008650EB /* MirSud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1681F2132628708C008650EB /* Build configuration list for PBXNativeTarget "MirSud" */;
+			buildPhases = (
+				FAF00A772E9B7BE3778EFE8E /* [CP] Check Pods Manifest.lock */,
+				1681F2002628708C008650EB /* Sources */,
+				1681F2012628708C008650EB /* Frameworks */,
+				1681F2022628708C008650EB /* Resources */,
+				22679881D1971811F0076AFF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MirSud;
+			productName = MirSud;
+			productReference = 1681F2042628708C008650EB /* MirSud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1681F1FC2628708C008650EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1681F2032628708C008650EB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 1681F1FF2628708C008650EB /* Build configuration list for PBXProject "MirSud" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1681F1FB2628708C008650EB;
+			productRefGroup = 1681F2052628708C008650EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1681F2032628708C008650EB /* MirSud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1681F2022628708C008650EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1681F20F2628708C008650EB /* Preview Assets.xcassets in Resources */,
+				1681F20C2628708C008650EB /* Assets.xcassets in Resources */,
+				1681F2552628BF36008650EB /* spd-detail_1.json in Resources */,
+				1681F23026287716008650EB /* spb.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22679881D1971811F0076AFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MirSud/Pods-MirSud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MirSud/Pods-MirSud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MirSud/Pods-MirSud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAF00A772E9B7BE3778EFE8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MirSud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1681F2002628708C008650EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165D930F263064920070698F /* DefendantCivilCase.swift in Sources */,
+				16941E7A262C504A00C1C39A /* VK_Login_VM.swift in Sources */,
+				165D930B26301D640070698F /* NonVkUser.swift in Sources */,
+				161FD35F262F4191003FF17E /* ImageLoader.swift in Sources */,
+				161FD365262F41D3003FF17E /* EnvironmentValues+ImageCache.swift in Sources */,
+				1681F25C2628C1EB008650EB /* Test_CivilCaseDetail.swift in Sources */,
+				161FD35C262F4174003FF17E /* AsyncImage.swift in Sources */,
+				1681F2492628936F008650EB /* Parser_CivilCaseList.swift in Sources */,
+				1681F24E26289754008650EB /* String+Extensions.swift in Sources */,
+				16941E53262C452800C1C39A /* SPB_RealmService.swift in Sources */,
+				16941D4D262A058200C1C39A /* DefendantList.swift in Sources */,
+				16941E45262BFFC200C1C39A /* ActivityIndicator.swift in Sources */,
+				16941EB9262DE54100C1C39A /* GrowingButton.swift in Sources */,
+				16941E6C262C4C2F00C1C39A /* Parser_VK_UserList.swift in Sources */,
+				1681F23A26288E01008650EB /* CivilCaseRow.swift in Sources */,
+				1681F20A2628708C008650EB /* ContentView.swift in Sources */,
+				1681F2582628C14C008650EB /* Parser_CivilCaseDetail.swift in Sources */,
+				16941E7E262C50D700C1C39A /* VK_RealmService.swift in Sources */,
+				16941D142629BB1400C1C39A /* SPB_AlamofireService.swift in Sources */,
+				16941EAB262D490F00C1C39A /* VK_Login.swift in Sources */,
+				161FD36A262F4701003FF17E /* CommonWebView.swift in Sources */,
+				16941D56262A069B00C1C39A /* DefendantRow.swift in Sources */,
+				161FD362262F41AA003FF17E /* ImageCache.swift in Sources */,
+				1681F2522628A6AD008650EB /* GroupBy.swift in Sources */,
+				16941E76262C500700C1C39A /* VK_Login_View.swift in Sources */,
+				166FB64F2631DE0500B8467A /* MailView.swift in Sources */,
+				1681F22426287485008650EB /* CivilCase.swift in Sources */,
+				165D930626301CE40070698F /* RealmNonVKUser.swift in Sources */,
+				16941E5B262C462B00C1C39A /* VK_AlamofireService.swift in Sources */,
+				16941D042629638900C1C39A /* Date+Extensions.swift in Sources */,
+				16941E5F262C4A3B00C1C39A /* VK_Session.swift in Sources */,
+				16941D0A2629721200C1C39A /* CivilCaseList_VM.swift in Sources */,
+				16941D0F2629745800C1C39A /* SPB_NetworkService.swift in Sources */,
+				16941D50262A05A600C1C39A /* DefendantList_VM.swift in Sources */,
+				16941E28262A984200C1C39A /* RealmBase.swift in Sources */,
+				1681F23726288DBB008650EB /* CivilCaseList.swift in Sources */,
+				16941D1D2629F41300C1C39A /* Defendant.swift in Sources */,
+				16941EB3262DA32100C1C39A /* SPB_VK_LinkService.swift in Sources */,
+				161FD33A262F1755003FF17E /* RealmVkUser.swift in Sources */,
+				1681F2282628753B008650EB /* CivilCaseDetail.swift in Sources */,
+				16941E89262C55C300C1C39A /* Parser_VK_Token.swift in Sources */,
+				16941D1A2629ECB600C1C39A /* SPB_UserDefaultService.swift in Sources */,
+				16941EA5262CB02500C1C39A /* RealmToken.swift in Sources */,
+				1681F2082628708C008650EB /* MirSudApp.swift in Sources */,
+				16941E2B262A984E00C1C39A /* RealmDefendant.swift in Sources */,
+				16941E36262AFCC000C1C39A /* DefendantDetail.swift in Sources */,
+				16941E3C262B369500C1C39A /* DefendantHistory.swift in Sources */,
+				16941E85262C545A00C1C39A /* VK_LoginNetworkService.swift in Sources */,
+				1681F23326288D4E008650EB /* Test_CivilCaseList.swift in Sources */,
+				161FD336262EB647003FF17E /* SPB_DetailService.swift in Sources */,
+				1681F23D26288EBA008650EB /* CivilCaseDetailView.swift in Sources */,
+				16941E31262A991E00C1C39A /* RealmService.swift in Sources */,
+				16941E66262C4B2C00C1C39A /* VK_User.swift in Sources */,
+				161FD33D262F17B5003FF17E /* RealmCivilCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1681F2112628708C008650EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1681F2122628708C008650EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1681F2142628708C008650EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC7B6B8E8252BF65CA4B6FC3 /* Pods-MirSud.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MirSud/Preview Content\"";
+				DEVELOPMENT_TEAM = 78S4SSQ86F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MirSud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.garneteum.MirSud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1681F2152628708C008650EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3427E0107CF455B0CA175CE3 /* Pods-MirSud.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MirSud/Preview Content\"";
+				DEVELOPMENT_TEAM = 78S4SSQ86F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MirSud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.garneteum.MirSud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1681F1FF2628708C008650EB /* Build configuration list for PBXProject "MirSud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1681F2112628708C008650EB /* Debug */,
+				1681F2122628708C008650EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1681F2132628708C008650EB /* Build configuration list for PBXNativeTarget "MirSud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1681F2142628708C008650EB /* Debug */,
+				1681F2152628708C008650EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1681F1FC2628708C008650EB /* Project object */;
+}
